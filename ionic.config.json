@@ -1,0 +1,8 @@
+{
+  "name": "Honkin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "992e998d"
+}

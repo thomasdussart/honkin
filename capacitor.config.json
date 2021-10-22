@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Honkin",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
