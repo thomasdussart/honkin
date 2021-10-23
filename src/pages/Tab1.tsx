@@ -13,13 +13,13 @@ import {
   IonRow,
   IonText,
   IonCol,
+  IonButton,
   IonImg,
   IonItem,
   IonIcon,
   IonLabel,
-  IonButton,
 } from "@ionic/react";
-
+import logo from "../images/logo.png";
 import ExploreContainer from "../components/ExploreContainer";
 import "./Tab1.css";
 
@@ -30,50 +30,23 @@ const Tab1: React.FC = () => {
         <IonGrid>
           <IonRow>
             <IonCol size="12">
-              {/* <IonImg src="/public/assets/honkin.png"></IonImg> */}
+              <IonImg src={logo} alt="test"></IonImg> */
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
-              <IonCard>
-                <IonCardHeader>
-                  <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
-                  <IonCardTitle>Card Title</IonCardTitle>
-                </IonCardHeader>
-                <IonCardContent>Stationnement</IonCardContent>
-              </IonCard>
+              <IonButton color="light">Stationnement</IonButton>
             </IonCol>
             <IonCol>
-              <IonCard>
-                <IonCardHeader>
-                  <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
-                  <IonCardTitle>Card Title</IonCardTitle>
-                </IonCardHeader>
-
-                <IonCardContent>Accrochage</IonCardContent>
-              </IonCard>
+              <IonButton>Accrochage</IonButton>
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
-              <IonCard>
-                <IonCardHeader>
-                  <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
-                  <IonCardTitle>Card Title</IonCardTitle>
-                </IonCardHeader>
-
-                <IonCardContent>Vol</IonCardContent>
-              </IonCard>
+              <IonButton>Vol/Vandalisme</IonButton>
             </IonCol>
             <IonCol>
-              <IonCard>
-                <IonCardHeader>
-                  <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
-                  <IonCardTitle>Card Title</IonCardTitle>
-                </IonCardHeader>
-
-                <IonCardContent>Vandalisme</IonCardContent>
-              </IonCard>
+              <IonButton>?</IonButton>
             </IonCol>
           </IonRow>
         </IonGrid>

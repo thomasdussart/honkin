@@ -49,7 +49,9 @@ const Tab2: React.FC = () => {
         />
         <IonInput value={result} placeholder="Enter Input"></IonInput>
         <IonText color="primary">
-          <p>{result}</p>
+          <a href={result}>
+            <p>{result}</p>
+          </a>
         </IonText>
       </IonContent>
     </IonPage>

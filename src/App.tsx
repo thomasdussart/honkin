@@ -12,8 +12,10 @@ import {
   IonTabButton,
   IonTabs,
 } from "@ionic/react";
+import logoHonkin from "./images/logoHonkin.svg";
+// var QRCode = require("qrcode.react");
 import { IonReactRouter } from "@ionic/react-router";
-import { carOutline, bodyOutline, qrCodeOutline } from "ionicons/icons";
+import { bodyOutline, qrCodeOutline } from "ionicons/icons";
 import Tab1 from "./pages/Tab1";
 import Tab2 from "./pages/Tab2";
 import Tab3 from "./pages/Tab3";
@@ -57,7 +59,7 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon icon={carOutline} />
+            <IonIcon icon={logoHonkin} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
