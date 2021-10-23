@@ -24,13 +24,13 @@ const Tab2: React.FC = () => {
     if (data) {
       setResult(data);
       console.log(data);
-      const dataPost = {
-        qr: result,
-      };
-      fetch("http://localhost:1337/qrcode", {
-        method: "POST",
-        body: JSON.stringify(dataPost),
-      }).then((res) => console.log("ok"));
+      // const dataPost = {
+      //   qr: result,
+      // };
+      // fetch("http://localhost:1337/qrcode", {
+      //   method: "POST",
+      //   body: JSON.stringify(dataPost),
+      // }).then((res) => console.log("ok"));
     }
   };
 
