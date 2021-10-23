@@ -42,7 +42,7 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <QrReader
-          delay={300}
+          delay={3000}
           onError={handleError}
           onScan={handleScan}
           style={{ width: "100%" }}
