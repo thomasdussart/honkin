@@ -11,7 +11,9 @@ import {
   IonCardContent,
   IonGrid,
   IonRow,
+  IonText,
   IonCol,
+  IonImg,
   IonItem,
   IonIcon,
   IonLabel,
@@ -24,33 +26,57 @@ import "./Tab1.css";
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <IonContent>
         <IonGrid>
           <IonRow>
-            <IonCol>ion-col</IonCol>
-            <IonCol>ion-col</IonCol>
-            <IonCol>ion-col</IonCol>
-            <IonCol>ion-col</IonCol>
+            <IonCol size="12">
+              {/* <IonImg src="/public/assets/honkin.png"></IonImg> */}
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <IonCard>
+                <IonCardHeader>
+                  <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+                  <IonCardTitle>Card Title</IonCardTitle>
+                </IonCardHeader>
+                <IonCardContent>Stationnement</IonCardContent>
+              </IonCard>
+            </IonCol>
+            <IonCol>
+              <IonCard>
+                <IonCardHeader>
+                  <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+                  <IonCardTitle>Card Title</IonCardTitle>
+                </IonCardHeader>
+
+                <IonCardContent>Accrochage</IonCardContent>
+              </IonCard>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <IonCard>
+                <IonCardHeader>
+                  <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+                  <IonCardTitle>Card Title</IonCardTitle>
+                </IonCardHeader>
+
+                <IonCardContent>Vol</IonCardContent>
+              </IonCard>
+            </IonCol>
+            <IonCol>
+              <IonCard>
+                <IonCardHeader>
+                  <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+                  <IonCardTitle>Card Title</IonCardTitle>
+                </IonCardHeader>
+
+                <IonCardContent>Vandalisme</IonCardContent>
+              </IonCard>
+            </IonCol>
           </IonRow>
         </IonGrid>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonCard>
-          <IonCardHeader>
-            <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
-            <IonCardTitle>Card Title</IonCardTitle>
-          </IonCardHeader>
-
-          <IonCardContent>
-            Keep close to Nature's heart... and break clear away, once in
-            awhile, and climb a mountain or spend a week in the woods. Wash your
-            spirit clean.
-          </IonCardContent>
-        </IonCard>
-        {/* <ExploreContainer name="Tab 1 page" /> */}
       </IonContent>
     </IonPage>
   );

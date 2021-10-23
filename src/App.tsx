@@ -1,4 +1,5 @@
 import { Redirect, Route } from "react-router-dom";
+
 import {
   IonHeader,
   IonToolbar,
@@ -39,11 +40,6 @@ import "./theme/variables.css";
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>TUT TUT</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/tab1">
