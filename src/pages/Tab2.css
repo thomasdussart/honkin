@@ -1,1 +1,24 @@
+.ion-color.ion-color-primary.md.hydrated {
+  font-size: 2rem !important;
+  text-align: center !important;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+}
 
+.ion-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end !important;
+}
+
+.button-native {
+  position: fixed !important;
+  bottom: 0 !important;
+  height: 7% !important;
+}
+
+.md.button.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
+  margin-bottom: 1rem;
+  width: 80%;
+  align-self: center;
+}

@@ -26,14 +26,39 @@ import "./Tab1.css";
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonContent>
+      <IonContent className="ion-justify-content-center ion-align-items-center">
         <IonGrid>
           <IonRow>
-            <IonCol size="12">
+            <IonCol className="ion-margin-top" size="12">
               <IonImg src={logo} alt="test"></IonImg> */
             </IonCol>
           </IonRow>
-          <IonRow>
+          <IonRow className="ion-margin-top ">
+            <IonCol
+              className="
+             ion-text-center"
+              size="12"
+            >
+              <IonButton className="ion-button ion-padding round">
+                Inscription
+              </IonButton>
+            </IonCol>
+            <IonCol className="ion-text-center" size="12">
+              <IonButton className="ion-padding ion-button round">
+                Connexion
+              </IonButton>
+            </IonCol>
+          </IonRow>
+        </IonGrid>
+      </IonContent>
+    </IonPage>
+  );
+};
+
+export default Tab1;
+
+{
+  /* <IonRow>
             <IonCol>
               <IonButton color="light">Stationnement</IonButton>
             </IonCol>
@@ -48,11 +73,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonButton>?</IonButton>
             </IonCol>
-          </IonRow>
-        </IonGrid>
-      </IonContent>
-    </IonPage>
-  );
-};
-
-export default Tab1;
+          </IonRow> */
+}
+// <IonRow>
+//   <IonCol className="ion-margin-top ion-text-center" size="12">
+//     <QRCode value="http://facebook.github.io/react/" />
+//   </IonCol>
+// </IonRow>;

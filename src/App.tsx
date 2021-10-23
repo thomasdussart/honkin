@@ -13,7 +13,7 @@ import {
   IonTabs,
 } from "@ionic/react";
 import logoHonkin from "./images/logoHonkin.svg";
-// var QRCode = require("qrcode.react");
+
 import { IonReactRouter } from "@ionic/react-router";
 import { bodyOutline, qrCodeOutline } from "ionicons/icons";
 import Tab1 from "./pages/Tab1";

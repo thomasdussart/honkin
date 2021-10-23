@@ -1,0 +1,25 @@
+.ion-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end !important;
+}
+
+form {
+  height: 100% !important;
+  font-size: 2rem !important;
+  color: black !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+input {
+  margin-top: 1rem !important;
+  width: 50% !important;
+  margin-bottom: 1rem !important;
+}
+
+#submit {
+  color: white;
+}
