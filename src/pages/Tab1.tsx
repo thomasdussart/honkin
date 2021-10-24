@@ -20,34 +20,42 @@ import {
   IonLabel,
 } from "@ionic/react";
 import logo from "../images/logo.png";
+import homepage from "../images/homepage.svg";
 import ExploreContainer from "../components/ExploreContainer";
 import "./Tab1.css";
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonContent className="ion-justify-content-center ion-align-items-center">
+      <IonContent className="">
         <IonGrid>
           <IonRow>
-            <IonCol className="ion-margin-top" size="12">
-              <IonImg src={logo} alt="test"></IonImg> */
-            </IonCol>
+            <div className="bg-gradient">
+              <IonCol className="ion-margin-top" size="12">
+                <IonImg src={logo} alt="Honkin Logo"></IonImg>
+              </IonCol>
+              <IonImg src={homepage} alt="guy with a car"></IonImg>
+            </div>
           </IonRow>
-          <IonRow className="ion-margin-top ">
-            <IonCol
-              className="
-             ion-text-center"
-              size="12"
-            >
-              <IonButton href="/tab4" className="ion-button ion-padding round">
-                Inscription
-              </IonButton>
-            </IonCol>
-            <IonCol className="ion-text-center" size="12">
-              <IonButton href="/tab3" className="ion-padding ion-button round">
-                Connexion
-              </IonButton>
-            </IonCol>
+          <IonRow className="">
+            <div className="home-buttons">
+              <a href="/tab3">
+                <button
+                  className="ion-padding ion-button round"
+                  id="inscription-home"
+                >
+                  Inscription
+                </button>
+              </a>
+              <a href="/tab3">
+                <button
+                  className="ion-padding ion-button round"
+                  id="connexion-home"
+                >
+                  Connexion
+                </button>
+              </a>
+            </div>
           </IonRow>
         </IonGrid>
       </IonContent>
@@ -56,27 +64,3 @@ const Tab1: React.FC = () => {
 };
 
 export default Tab1;
-
-{
-  /* <IonRow>
-            <IonCol>
-              <IonButton color="light">Stationnement</IonButton>
-            </IonCol>
-            <IonCol>
-              <IonButton>Accrochage</IonButton>
-            </IonCol>
-          </IonRow>
-          <IonRow>
-            <IonCol>
-              <IonButton>Vol/Vandalisme</IonButton>
-            </IonCol>
-            <IonCol>
-              <IonButton>?</IonButton>
-            </IonCol>
-          </IonRow> */
-}
-// <IonRow>
-//   <IonCol className="ion-margin-top ion-text-center" size="12">
-//     <QRCode value="http://facebook.github.io/react/" />
-//   </IonCol>
-// </IonRow>;

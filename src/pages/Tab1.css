@@ -1,1 +1,39 @@
+body {
+  margin: 0;
+}
 
+.bg-gradient {
+  background: linear-gradient(180deg, #f8be44 -46.72%, #e5232d 149.48%);
+  border-radius: 0px 0px 30px 30px;
+  height: 28rem;
+}
+
+.home-buttons {
+  width: 90%;
+  margin: auto;
+}
+
+#inscription-home {
+  background-color: #f8be44;
+  display: block;
+  width: 20rem;
+  margin-top: 1rem !important;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#connexion-home {
+  background-color: #3166af !important;
+  display: block;
+  width: 20rem;
+  margin: auto;
+  margin-top: 1rem !important;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+}

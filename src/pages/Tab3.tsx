@@ -35,6 +35,9 @@ const Tab3: React.FC = () => {
           <IonAvatar>
             <img src={profile} alt="" />
           </IonAvatar>
+          <div className="cadre-nom">
+            <p className="ion-text-center">John Doe</p>
+          </div>
           <progress id="klax-progress" value="65" max="100"></progress>
           <p id="klax-texte" className="ion-text-center">
             Plus que 200 Klax's pour atteindre le prochain rang

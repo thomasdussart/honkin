@@ -40,19 +40,28 @@ const Tab2: React.FC = () => {
     }
   };
 
-  const handleStationnement = () => {
+  const handlePieton = () => {
     alert("Send push to User");
     setShowModal(false);
   };
-  const handlePolice = () => {
+  const handleTrottoir = () => {
     alert("Send push to User");
     setShowModal(false);
   };
-  const handleVandalisme = () => {
+  const handleLivraison = () => {
     alert("Send push to User");
     setShowModal(false);
   };
-  const handleAccrochage = () => {
+  const handleGarage = () => {
+    alert("Send push to User");
+    setShowModal(false);
+  };
+  const handlePMR = () => {
+    alert("Send push to User");
+    setShowModal(false);
+  };
+
+  const handleAutre = () => {
     alert("Send push to User");
     setShowModal(false);
   };
@@ -64,33 +73,40 @@ const Tab2: React.FC = () => {
   return (
     <IonPage id="full-page">
       <IonContent fullscreen>
-        <QrReader
-          delay={300}
-          onError={handleError}
-          onScan={handleScan}
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
-        />
-        <IonInput value={result} placeholder="Enter Input"></IonInput>
-        <IonText color="primary"></IonText>
+        <div className="bg-gradient">
+          <QrReader
+            delay={300}
+            onError={handleError}
+            onScan={handleScan}
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+          />
+        </div>
         {showModal ? (
           <IonModal isOpen={showModal} cssClass="my-custom-class">
-            <IonText color="primary">Choisissez le type d'alerte</IonText>
-            <IonButton shape="round" onClick={() => handleStationnement()}>
-              Stationnement
+            <IonText color="primary">
+              Choisissez le honk correspondant à votre problème
+            </IonText>
+            <IonButton shape="round" onClick={() => handlePieton()}>
+              Passage piéton
             </IonButton>
-            <IonButton shape="round" onClick={() => handlePolice()}>
-              Police
+            <IonButton shape="round" onClick={() => handleTrottoir()}>
+              Trottoir
             </IonButton>
-            <IonButton shape="round" onClick={() => handleVandalisme()}>
-              Vandalisme
+            <IonButton shape="round" onClick={() => handleLivraison()}>
+              Livraison
             </IonButton>
-            <IonButton shape="round" onClick={() => handleAccrochage()}>
-              Accrochage
+            <IonButton shape="round" onClick={() => handleGarage()}>
+              Garage
             </IonButton>
-            <IonButton shape="round">Police</IonButton>
+            <IonButton shape="round" onClick={() => handlePMR()}>
+              Stationnement PMR
+            </IonButton>
+            <IonButton shape="round" onClick={() => handleAutre()}>
+              Autre
+            </IonButton>
 
             <IonButton onClick={() => setShowModal(false)}>
               Close Modal
