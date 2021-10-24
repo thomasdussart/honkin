@@ -39,12 +39,12 @@ const Tab1: React.FC = () => {
              ion-text-center"
               size="12"
             >
-              <IonButton className="ion-button ion-padding round">
+              <IonButton href="/tab4" className="ion-button ion-padding round">
                 Inscription
               </IonButton>
             </IonCol>
             <IonCol className="ion-text-center" size="12">
-              <IonButton className="ion-padding ion-button round">
+              <IonButton href="/tab3" className="ion-padding ion-button round">
                 Connexion
               </IonButton>
             </IonCol>

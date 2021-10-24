@@ -23,7 +23,7 @@ import "./Tab2.css";
 
 const Tab2: React.FC = () => {
   const [result, setResult] = useState("No result");
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   const handleScan = (data: any) => {
     if (data) {

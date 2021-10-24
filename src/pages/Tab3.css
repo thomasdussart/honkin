@@ -1,9 +1,3 @@
-.ion-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end !important;
-}
-
 form {
   height: 100% !important;
   font-size: 2rem !important;
@@ -18,8 +12,57 @@ input {
   margin-top: 1rem !important;
   width: 50% !important;
   margin-bottom: 1rem !important;
+  color: white !important;
 }
 
-#submit {
-  color: white;
+.ion-page {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+}
+
+#send-poste {
+  width: 90%;
+  margin-bottom: 1rem;
+  margin: auto;
+}
+
+canvas {
+  width: 90%;
+  margin: auto;
+}
+
+#root > ion-app {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+ion-avatar.md.hydrated {
+  padding-top: 1rem;
+  width: 10rem;
+  height: 30%;
+  display: block;
+  margin: auto;
+}
+
+.cadre {
+  border: 4px solid black;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 1.7rem;
+}
+
+#klax-progress {
+  width: 70%;
+  height: 7%;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
 }
